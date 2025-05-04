@@ -1,4 +1,5 @@
 package task4;
+
 import java.util.Scanner;
 
 public class Eight_Print_String {
@@ -8,11 +9,13 @@ public class Eight_Print_String {
 		String value;
 		System.out.println("Enter the String to Print");
 		value = obj.nextLine();
-
+		System.out.println("");
+		System.out.println("The Entered Strings are:");
 		for (int i = 0; i < 10; i++) {
 			System.out.println(value);
 
 		}
 		obj.close();
 	}
+
 }
