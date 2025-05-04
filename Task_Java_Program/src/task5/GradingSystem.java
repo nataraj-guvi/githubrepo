@@ -3,16 +3,13 @@ package task5;
 import java.util.Scanner;
 
 public class GradingSystem {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the Marks");
 		int marks = scanner.nextInt();
 		if (marks > 100 || marks < 0) {
 			System.out.println("Invalid Input");
-		} 
-		
-		else {
+		} else {
 			System.out.println("Student getting Grade is:");
 			if (marks == 100) {
 				System.out.println("S");
@@ -30,7 +27,6 @@ public class GradingSystem {
 				System.out.println("F");
 			}
 		}
-
 		scanner.close();
 	}
 }

@@ -57,23 +57,21 @@ public class Employee {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter Employee ID:");
 		int id = scan.nextInt();
-		System.out.print("Enter First Name");
+		System.out.print("Enter First Name" + " ");
 		String firstName = scan.nextLine();
 		System.out.print("and Last Name:");
 		String lastName = scan.nextLine();
 		System.out.println("Enter Salary:");
 		int salary = scan.nextInt();
 		Employee emp = new Employee(id, firstName, lastName, salary);
-		System.out.println(emp);
-		System.out.println("Annual Salary: " + emp.getAnnualSalary());
-
+		System.out.println(emp + "\n ");
+		System.out.println("Annual Salary: " + emp.getAnnualSalary() + " \n");
 		System.out.println("Enter raise Percentage:");
 		double percent = scan.nextDouble();
 		double newsalary = emp.raiseSalary(percent);
-		System.out.println("Employee Details " + emp);
-		System.out.println("New Salary After raised" + newsalary);
+		System.out.println(" \n" + "Employee Details " + emp + " \n");
+		System.out.println("New Salary After raised:" + " " + newsalary);
 		scan.close();
-		
 	}
 
 }

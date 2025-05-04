@@ -3,7 +3,6 @@ package task5;
 import java.util.Scanner;
 
 public class HotelRoomTariff {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the Month in number:");
@@ -25,15 +24,12 @@ public class HotelRoomTariff {
 		default:
 			isPeakSeason = false;
 		}
-
 		if (isPeakSeason) {
 			totalTariff = roomRent * daysStayed * 1.20;
 		} else {
 			totalTariff = roomRent * daysStayed;
 		}
-
-		//System.out.printf("%.2f\n","The Total Amount for the Room Rent is:"+ totalTariff);
-		System.out.printf("The Total Amount for the Room Rent is:"+String.format("%.2f", totalTariff));
+		System.out.printf("The Total Amount for the Room Rent is:" + String.format("%.2f", totalTariff));
 		scanner.close();
 	}
 }
